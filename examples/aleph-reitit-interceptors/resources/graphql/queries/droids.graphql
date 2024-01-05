@@ -1,0 +1,9 @@
+query DroidsQuery($episode: Episode) {
+  droids(episode: $episode) {
+    id
+    appearsIn
+    name
+    primaryFunction
+  }
+}
+

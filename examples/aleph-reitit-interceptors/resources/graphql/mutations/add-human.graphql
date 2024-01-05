@@ -1,0 +1,11 @@
+mutation AddHuman($name: String, $originPlanet: String, $appearsIn: [Episode]) {
+  addHuman(name: $name, originPlanet: $originPlanet, appearsIn: $appearsIn) {
+    id
+    name
+    originPlanet
+    appearsIn
+    causes {
+      id
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{"e071ca3c-817a-4cb3-a1be-138b2d3d085c"
+ {:id           "e071ca3c-817a-4cb3-a1be-138b2d3d085c"
+  :kind         :HUMAN
+  :name         "Luke Skywalker"
+  :causes       #{1}
+  :originPlanet "Tatooine"
+  :appearsIn    #{:NEWHOPE :EMPIRE :JEDI}}
+ ; --
+ "acf2bc4f-8b1b-4c93-8e8f-1491c6d25755"
+ {:id           "acf2bc4f-8b1b-4c93-8e8f-1491c6d25755"
+  :kind         :HUMAN
+  :name         "Leia Organa"
+  :causes       #{1}
+  :originPlanet "Alderaan"
+  :appearsIn    #{:NEWHOPE :EMPIRE :JEDI}}
+ "57c52485-0fc1-4573-8f68-2f6cedb0f3ae"
+ {:id           "57c52485-0fc1-4573-8f68-2f6cedb0f3ae"
+  :kind         :HUMAN
+  :name         "Han Solo"
+  :causes        #{1}
+  :originPlanet "Corellia"
+  :appearsIn    #{:NEWHOPE :EMPIRE :JEDI}}
+ "eadeb156-5ff8-4c13-a4fb-41d046edc795"
+ {:id           "eadeb156-5ff8-4c13-a4fb-41d046edc795"
+  :kind         :HUMAN
+  :name         "Lando Calrissian"
+  :causes       #{1}
+  :originPlanet "Socorro"
+  :appearsIn    #{:EMPIRE :JEDI}}
+ "ca2e140f-1d69-4cf3-983f-b22d29a29671"
+ {:id               "ca2e140f-1d69-4cf3-983f-b22d29a29671"
+  :kind            :DROID
+  :name             "C-3P0"
+  :causes          #{1}
+  :primaryFunction :PROTOCOL
+  :appearsIn       #{:NEWHOPE :EMPIRE :JEDI}}
+ "de33b587-6029-41af-9104-0bed49b6ed77"
+ {:id              "de33b587-6029-41af-9104-0bed49b6ed77"
+  :kind            :DROID
+  :name            "R2-D2"
+  :causes          #{1}
+  :primaryFunction :ASTRO
+  :appearsIn       #{:NEWHOPE :EMPIRE :JEDI}}
+ "a3915127-1676-4a1e-93e9-6c66dbf1a76a"
+ {:id              "a3915127-1676-4a1e-93e9-6c66dbf1a76a"
+  :kind            :DROID
+  :name            "R4-D6"
+  :causes          #{1}
+  :primaryFunction :ASTRO
+  :appearsIn       #{:NEWHOPE}}
+ "bf26ae98-86a9-497b-9f39-68686fc41b23"
+ {:id           "bf26ae98-86a9-497b-9f39-68686fc41b23"
+  :kind         :HUMAN
+  :name         "Admiral Tarkin"
+  :originPlanet "Eriadu"
+  :causes       #{0}
+  :appearsIn    #{:NEWHOPE}}}
+

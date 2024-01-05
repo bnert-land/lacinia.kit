@@ -1,0 +1,12 @@
+query CauseQuery($id: Int) {
+  cause(id: $id) {
+    id
+    name
+    humans {
+      id
+      name
+      appearsIn
+    }
+  }
+}
+

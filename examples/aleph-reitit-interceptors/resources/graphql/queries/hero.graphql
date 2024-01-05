@@ -1,0 +1,15 @@
+query HeroQuery($id: Uuid) {
+  hero(id: $id) {
+    ... on Human {
+      id
+      name
+      appearsIn
+    }
+    ... on Droid {
+      id
+      name
+      appearsIn
+    }
+  }
+}
+

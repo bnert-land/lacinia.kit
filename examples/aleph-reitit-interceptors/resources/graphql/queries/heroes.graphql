@@ -1,0 +1,17 @@
+query HeroesQuery($episode: Episode) {
+  heros(episode: $episode) {
+    ... on Human {
+      id
+      name
+      appearsIn
+      originPlanet
+    }
+    ... on Droid {
+      id
+      name
+      appearsIn
+      primaryFunction
+    }
+  }
+}
+

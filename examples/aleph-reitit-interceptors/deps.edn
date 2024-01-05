@@ -1,0 +1,9 @@
+{:paths ["src" "resources"]
+ :deps  {aleph/aleph {:mvn/version "0.6.4"}
+         land.bnert/beh
+         {:git/url "https://github.com/bnert-land/beh"
+          :git/sha "9fa6ab1ec08646025b4e6516b7222da9d7154922"}
+         land.bnert/lacinia-kit {:local/root "../../"}
+         metosin/jsonista {:mvn/version "0.3.8"}
+         metosin/reitit {:mvn/version "0.6.0"}}}
+

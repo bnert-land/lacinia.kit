@@ -1,0 +1,14 @@
+query HumansQuery($episode: Episode) {
+  humans {
+    id
+    name
+    causes {
+      id
+      name
+      humans {
+        id
+        name
+      }
+    }
+  }
+}
