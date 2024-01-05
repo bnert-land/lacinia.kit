@@ -45,7 +45,11 @@
 
 (def router
   (r.http/router
-    [["/graphql"
+    [["/graphiql"
+      {:get {:handler (l.kit.graphiql/graphiql
+                        {:enable? (not @disable-graphiql?)
+                         :url     "http://localhost:9109/graphql"})}}]
+     ["/graphql"
       {:get {:handler (l.kit.graphiql/graphiql
                         {:enable? (not @disable-graphiql?)
                          :url     "http://localhost:9109/graphql"})}

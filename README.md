@@ -38,7 +38,7 @@ $ clj -M -m server.core
 ```
 
 By default, the server(s) will listen `http://localhost:9109`,
-with the GraphQL endpoint set to `/graphql`. A `GET` request to `/graphql`
+with the GraphQL endpoint set to `/graphql`. A `GET` request to `/graphiql`
 will fetch the GraphiQL app (if enabled).
 
 To launch a server w/o GraphiQL:
