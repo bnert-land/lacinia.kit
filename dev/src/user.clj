@@ -54,4 +54,10 @@
   (q "graphql/queries/cause.graphql"
      "CauseQuery"
      {:id 1})
+
+  (q "graphql/mutations/add-human.graphql"
+     "AddHuman"
+     {:name         "Jabba The Hutt"
+      :originPlanet "Nal Hutta"
+      :episodes     [:EMPIRE :JEDI]})
 )

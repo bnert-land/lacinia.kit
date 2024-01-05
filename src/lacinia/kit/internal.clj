@@ -2,7 +2,6 @@
   (:require
     [aero.core :as aero]
     [clojure.core.cache.wrapped :as cache]
-    [clojure.java.io :as io]
     [com.walmartlabs.lacinia.parser :as l.parser]
     [com.walmartlabs.lacinia.schema :as l.schema]
     [com.walmartlabs.lacinia.util :as l.util]))

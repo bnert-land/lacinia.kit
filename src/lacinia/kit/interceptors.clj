@@ -96,6 +96,7 @@
 
 (defn interceptors [{:keys [context
                             body-search-keys
+                            graphiql
                             resolvers
                             scalars
                             schema

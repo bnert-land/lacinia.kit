@@ -4,6 +4,7 @@
     [beh.core :as beh]
     [clojure.java.io :as io]
     [lacinia.kit.handlers :as l.kit.handlers]
+    [lacinia.kit.graphiql :as l.kit.graphiql]
     [lacinia.kit.interceptors :as l.kit.interceptors]
     [manifold.executor :as m.executor]
     [muuntaja.core :as muuntaja]
@@ -38,10 +39,17 @@
    :Query/human  s.resolvers/human
    :Query/humans s.resolvers/humans})
 
+(def disable-graphiql?
+  (delay
+    (some? (System/getenv "DISABLE_GRAPHIQL"))))
+
 (def router
   (r.http/router
     [["/graphql"
-      {:post
+      {:get {:handler (l.kit.graphiql/graphiql
+                        {:enable? (not @disable-graphiql?)
+                         :url     "http://localhost:9109/graphql"})}
+       :post
        {:interceptors (l.kit.interceptors/interceptors
                         {:schema      (io/resource "graphql/schema.edn")
                          :schema-opts {:executor (m.executor/execute-pool)}
