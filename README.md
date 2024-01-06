@@ -1,6 +1,20 @@
 # lacinia.kit
 
-Utilities to use Lacinia with other http implementations beside Pedestal.
+**IMPORTANT**: Even though much hasn't been done here, I think there is enough
+to go a different direction.
+
+The direction should be to have a "server frontend" facade in front of
+GraphQL execution engines and other such protocols, rather than attempting to
+build a framework/utilities on top of a specific solution.
+
+Work for this is done in [graphql.kit](https://github.com/bnert-land/graphql.kit),
+and the work done here will be left as a tombstone, but also an example to anyone
+who want to use lacinia directly.
+
+
+---
+
+Utilities/framework to use Lacinia with other http implementations beside Pedestal.
 
 The design intent of this library is to expose some GraphQL primitives which
 are able to hook into current web stacks in the Clojure community.
